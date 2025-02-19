@@ -47,8 +47,8 @@ namespace terminal {
             this.Title = "Please Log In";
             this.lblUser.Width = 4;
             this.lblUser.Height = 1;
-            this.lblUser.X = 13;
-            this.lblUser.Y = 3;
+            this.lblUser.X = Pos.Center() - 15;
+            this.lblUser.Y = Pos.Center() - 3;
             this.lblUser.Visible = true;
             this.lblUser.Data = "lblUser";
             this.lblUser.Text = "Username";
