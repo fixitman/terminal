@@ -5,9 +5,18 @@ Application.Init();
 
 try
 {
+    Console.WriteLine("starting");
     Application.Run(new MyView());
+    Console.WriteLine("ending");
+
+}
+catch(Exception e)
+{
+    Console.WriteLine($"Exception caught: {e.Message}");
 }
 finally
 {
-    Application.Shutdown();
+    
+    Console.WriteLine("shutting down");
+    //Application.Shutdown();
 }

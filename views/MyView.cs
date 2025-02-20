@@ -16,9 +16,16 @@ namespace terminal{
         public MyView() {
             InitializeComponent();
             //button1.Clicked += () => MessageBox.Query("Hello", "Hello There!", "Ok");
-            
-            
-            button1.Clicked += () => Application.Run(new MyDlg());
+            LoginModel loginModel;
+            MyDlg dlg;
+            button1.Clicked += () => {
+            dlg = new();
+                Application.Run(dlg);
+                loginModel = dlg.loginModel;
+            };
+
+
+
 
             
             

@@ -12,11 +12,14 @@ namespace terminal {
     
     
     public partial class MyDlg {
-        
+        public LoginModel loginModel;
         public MyDlg() {
             InitializeComponent();
+            txtUser.SetFocus();
             button.Clicked += () => {
+                loginModel = new(){UserName = txtUser.Text.ToString(), Password = txtPass.Text.ToString()};
                 RequestStop(this);
+                
             };
             
         }
